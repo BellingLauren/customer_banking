@@ -1,29 +1,7 @@
 # Import the create_cd_account and create_savings_account functions
 # ADD YOUR CODE HERE
-
-class Account:
-    """Creating an Account class with methods"""
-    def __init__(self, balance, interest):
-        self.balance = balance
-        self.interest = interest
-
-    # This method sets the balance of the account.
-    def set_balance(self, balance):
-        """Sets the balance for the for the account"""
-        self.balance = balance
-
-    # The method sets the interest gained for the account.
-    def set_interest(self, interest):
-        """Sets the interest gained for the the account"""
-        self.interest = interest
-
-balance = ()
-interest_rate,months= ()
-months = ()
-create_savings_account= Account(balance, interest_rate,months)
-savings_interest_earned = create_savings_account.calculate_interest(months)
-create_cd_account= Account(balance, interest_rate)
-CD_interest_earned = create_cd_account.calculate_interest(months)
+from savings_account import create_savings_account
+from cd_account import create_cd_account
 
 # Define the main function
 def main():
