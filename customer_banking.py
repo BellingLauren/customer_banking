@@ -11,12 +11,12 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
-    balance = float(input("Enter the savings account balance: "))
-    interest_rate,months = float(input("Enter the savings interest rate ( as a decimal): "))
-    months = int(input("Enter the number of months for saving account: "))
+    savings_balance = float(input("Enter the savings account balance: "))
+    saving_interest = float(input("Enter the savings interest rate ( as a decimal): "))
+    savings_maturity = int(input("Enter the number of months for saving account: "))
 
     # Call the create_savings_account function and pass the variables from the user.
-    updated_savings_balance, savings_interest_earned = create_savings_account(balance, interest_rate,months, months)
+    updated_savings_balance, savings_interest_earned = create_savings_account(savings_balance, saving_interest,savings_maturity)
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
@@ -25,12 +25,12 @@ def main():
     
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
-    balance = float(input("Enter the CD account balance: "))
-    interest_rate = float(input("Enter the CD interest rate ( as a decimal): "))
-    months = int(input("Enter the number of months for the CD: "))
+    cd_balance = float(input("Enter the CD account balance: "))
+    Cd_interest = float(input("Enter the CD interest rate ( as a decimal): "))
+    cd_maturity = int(input("Enter the number of months for the CD: "))
 
     # Call the create_cd_account function and pass the variables from the user.
-    updated_balance, CD_interest_earned = create_cd_account(balance, interest_rate, months)
+    updated_balance, CD_interest_earned = create_cd_account(cd_balance), Cd_interest, cd_maturity
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
