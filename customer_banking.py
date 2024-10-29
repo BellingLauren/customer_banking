@@ -30,7 +30,7 @@ def main():
     cd_maturity = int(input("Enter the number of months for the CD: "))
 
     # Call the create_cd_account function and pass the variables from the user.
-    updated_balance, CD_interest_earned = create_cd_account(cd_balance), Cd_interest, cd_maturity
+    updated_balance, CD_interest_earned = create_cd_account(cd_balance, Cd_interest, cd_maturity)
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
